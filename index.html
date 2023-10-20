@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <title>FilmTips - Den bästa källan för filmtips</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="close-icon" id="closeIcon">
+          <img src="img/CloseIcon.svg" alt="Close Icon">
+      </div>
+      
+    </div>
+
+    <!-- Mobil Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="index.html">HEM</a>
+        <a href="about.html">OM OSS</a>
+        <a href="search.html">SÖK FILMER</a>
+    </div>
+    <header>
+        <img src="img/film.png" alt="FilmTips logga" class="biglogo">
+        <h3><bold>FilmTipset</bold></h3>
+        <p>Den här sidan ger dig de bästa filmtipsen!</p>
+    </header>
+
+    <nav>
+        <a href="./index.html"><img src="./img/movie.svg" alt="FilmTips logga i menyn" class="logo" width="100" height="60"></a>
+        <ul class="navigation">
+            <li><a href="./index.html">HEM</a></li>
+            <li><a href="./about.html">OM OSS</a></li>
+            <li><a href="./search.html">SÖK FILMER</a></li>
+            <li>
+                <form id="searchForm" action="search.html" method="get">
+                    <input type="search" id="search" name="query" class="searchForm" placeholder="Sök">
+                    <button type="submit" class="submitINDEX">Sök</button>
+                </form>
+            </li>
+        </ul>
+    </nav>
+    <div class="MovieBackground">
+    <!-- Section Element -->
+    <section>
+        <h2>Top filmer!</h2>
+        <ul id="topMoviesList"></ul>
+
+        <div class="pagination">
+            <a href="?page=1">1</a>
+            <a href="?page=2">2</a>
+            <a href="?page=3">3</a>
+            ...
+        </div>
+    </section>
+  </div>
+    
+  
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; FilmTips 2023</p>
+            <div class="footer">
+                <a href="index.html">HEM</a>
+                <a href="about.html">OM OSS</a>
+                <a href="search.html">SÖK</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
